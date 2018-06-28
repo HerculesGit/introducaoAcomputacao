@@ -5,10 +5,16 @@ raiz = Tk()
 #transforma GIF em formato que o tkinter pode exibir
 photo = PhotoImage(file='minion.gif')
 
-peace = Label(master=raiz,
-	
-	width=1800,
-	height=1800)
+minion = Label(master=raiz,
+	image=photo,
+	width=1300,
+	height=800)
 
-peace.pack()
-raiz.mainloop()
+minion.pack()
+i = 0 
+
+while i<5:
+	i+=1
+	print(i)
+
+#raiz.mainloop()
